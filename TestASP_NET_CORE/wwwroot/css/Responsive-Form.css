@@ -1,0 +1,54 @@
+﻿body {
+    background-color: #030375;
+    display: flex;
+    flex-wrap:wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items:center;
+}
+fieldset {
+    font: italic small-caps bold 16px fantacy;
+    background-color: #000053;
+    color: #b6ff00;
+    border: 2px solid #003;
+    border-radius: 10px;
+    padding: 13px;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px 1px #003;
+}
+form {
+    background-color: #030353;
+    display: flex;
+    flex-wrap:wrap;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 1px #003;
+    padding: 13px;
+    gap: 10px;
+    width:90%;
+}
+form input{
+    background-color: #053;
+    color: #b6ff00;
+    border:none;
+    outline: none;
+    padding: 10px 10px;
+    flex-basis:200px;
+    flex-grow:1;
+}
+form input[type="button"]{
+    background-color: #b6ff00;
+    color: #030375;
+    font: italic small-caps bold 15px fantacy;
+    border:none;
+    outline: none;
+    padding: 10px 10px;
+    flex-basis:40px;
+    flex-grow:1;
+    cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,317 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+
+    color: #fff;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 20px 10px;
+    background:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position:relative;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration:none;
+    font-weight: 700;
+    font-size: 24px;
+}
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar1 a{
+   font-size: 18px;
+   font-weight: 500;
+   color: #fff;
+   text-decoration: none;
+   margin-left: 100px;
+}
+.navbar1 a:hover, .navbar1 a.active{
+    color: #00abf0;
+}
+.home{
+    background: url(/Images/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height:1.2;
+    z-index: 1;
+}
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content h3{
+    position:relative;
+    color: #00abf0;
+    font-size: 36px;
+    font-weight: 700;
+    z-index: 1;
+}
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: 1.5s;
+}
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+    z-index: 1;
+}
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: 1.8s;
+
+}
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 60px;
+}
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index:2;
+}
+ .btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    color: #081b29;
+    border-radius: 8px;
+    text-decoration:none;
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration:none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-box a:hover {
+    color: #00abf0;
+
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+.btn-box a:nth-child(2)::before{
+    background:#00abf0;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -3;
+    transition: 0.5s;
+    border-radius: 8px;
+    border: 2px solid #00abf0;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-sec{
+    position:absolute;
+    bottom:40px;
+    width:170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+.home-sec a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    font-size: 20px;
+    text-decoration: none;
+    z-index:1;
+    overflow: hidden;
+}
+.home-sec a:hover{
+    color: #081b29;
+}
+.home-sec a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.home-sec a:hover::before {
+   width:100%;
+    color: #081b29;
+}
+.home-imgHover{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width:800px;
+    background:transparent;
+    transition:3s;
+    animation: manipActiveHover .1s forwards;
+    pointer-events:none;
+}
+.home-imgHover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showright 2.1s ease forwards;
+    animation-delay: 2.1s;
+    z-index: 100;
+}
+@media only screen and (max-width: 2450px) {
+    .home-imgHover:hover {
+        background: #081b29;
+        opacity: 0.8;
+        width: 800px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .home-imgHover:hover {
+        transition: 3s;
+        background: #081b29;
+        opacity: 0.8;
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .home-imgHover:hover {
+        transition: 3s;
+        background: #081b29;
+        opacity: 0.8;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .home-imgHover:hover {
+        transition:3s;
+        background: #081b29;
+        opacity: 0.8;
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .home-imgHover:hover {
+        transition: 3s;
+        background: #081b29;
+        opacity: 0.8;
+        width: 100px;
+    }
+}
+@keyframes showright {
+    100% {
+        width: 0;
+    }
+}
+@keyframes manipActiveHover {
+    100% {
+        pointer-events:auto;
+    }
+}
+
+

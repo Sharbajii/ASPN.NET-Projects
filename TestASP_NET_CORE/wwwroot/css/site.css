@@ -1,0 +1,1069 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');*/
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
+body {
+  padding-bottom: 600px;
+
+}
+
+.container {
+    padding: 30px !important;
+    margin-right: inherit;
+    margin-left: inherit;
+}
+/*we can do the style for more than one tag per time*/
+/*h1, p {
+    color: red;
+    font-family: Arial;
+    font-size: 80px;
+    font-weight:bolder;
+}*/
+/*p {
+    color: black;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+}*/
+
+/*(.) is used to refer to a class atribute*/
+/*.x{
+    color: green;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+*/
+
+/*we can add the tagname then .classname to target a Specific tag*/
+/*
+h2.x {
+
+    color:chocolate;
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: bold;
+}
+*/
+
+/*(#) is used to refer to an id atribute*/
+/*#w {
+    color: blue;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+}*/
+/*we can add the tagname then #idname to target a Specific tag*/
+/*p#q{
+    color: black;
+    font-family:'Amiri Quran';
+    font-size: 40px;
+    font-weight: bold;
+}*/
+
+/*we use the Descendant methon to target a specific tag*/
+/*div p strong{
+    color: red;
+    font-family: Arial;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+div h2 strong{
+    color: red;
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: bold;
+}
+    */
+
+/*we use the Child methon to target a specific tag*/
+/*div > p{
+    color: blue;
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+}
+    */
+
+/*Descendant method without class nor id*/
+/*div li{
+    color: blue;
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+}
+*/
+
+/*Descendant method with class and id*/
+/*.container .list #a{
+    color: brown;
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+}*/
+
+/*Direct child method*/
+/*div > ul > li{
+    color: green;
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: bold;
+}
+*/
+
+/*Box model | border, margin- padding*/
+/*h1{
+    border: solid 10px red;
+    border-top: dotted 10px blue;
+    border-bottom: dashed 10px green;
+    border-left: ridge 10px yellow;
+    border-right: double 10px pink;
+   border-radius: 50px;
+   width: 250px;
+   text-align: center;
+   padding: 10px;
+}*/
+
+/*Margin "Auto"*/
+/*div > ol{
+    height: auto;
+    background-color: yellow;
+
+    margin-right: auto;
+    padding: 20px;
+    border: solid 10px gray;
+    width: 30%;
+    text-align:left;
+    border-radius: 50px;
+    box-shadow: 1px 10px 5px grey;
+    overflow: hidden;
+    position: relative;
+}*/
+
+/*Width, Height persentage*/
+/*div.wow {
+    height: 300px;
+    width: 300px;
+    background: blue;
+}
+
+h2{
+  background: red;
+    width:  98%;
+    height: 98%;
+}*/
+
+/*width content*/
+/*h1{
+    background: brown;
+    width: fit-content;
+}
+
+h2{
+    background:blue;
+    width: max-content;
+}
+
+h3{
+    background: green;
+    width: min-content;
+}
+.Width{
+   background: blue;
+   width: 300px;
+}
+
+.Max-Width{
+    background: red;
+   max-width : 300px;
+}
+
+.Min-Width{
+    background: green;
+    min-width: 300px;
+}
+    */
+
+/*Height content*/
+/*.height{
+    background: brown;
+    height: 100px;
+}
+
+.Max-Height{
+    background: red;
+    max-height : 100px;
+}
+
+.Min-Height{
+    background: green;
+    min-height: 100px;
+}
+*/
+
+/*border-radius*/
+/*.an {
+    background: pink;
+    height: 300px;
+    width: 300px;
+    border-radius: 100px 10px;
+    border-bottom-left-radius: 100px 10px;
+    border-top-right-radius: 100px;
+    border-radius: 50%;
+}*/
+
+/*Block & inline elements*/
+/*
+p{
+    background: red;
+}
+
+span{
+    background: blue;
+}*/
+
+/*Text align*/
+/*#a{
+    text-align: center;
+}
+#b{
+    text-align: left;
+}
+#c{
+    text-align: right;
+}
+#d{
+    text-align: justify;
+}*/
+
+/*Text decoration*/
+/*p{
+    text-align: left;
+    text-decoration: underline;
+    direction:rtl;
+}*/
+
+/*Text transform*/
+/*p{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}*/
+
+/*Text spacing*/
+/*p{
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    line-height: 200px;
+   
+}*/
+
+/*Text decoration*/
+/*p {
+    text-decoration-line:underline overline line-through;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+
+   text-decoration: underline red double;
+}/
+
+a{
+    text-decoration:none;
+}*/
+
+/*Text shadow H-shadow V-shadow Blur color
+  Box shadow H-shadow V-shadow Blur spread color inset
+*/
+/*p {
+    text-shadow: 5px 5px 2px red, -5px -5px 2px blue, 1px 1px 2px yellow;
+}
+
+.w{
+    width: 100%;
+    height: 100px;
+    background: red;
+    box-shadow: 2px 2px 20px 2px blue inset;
+    
+}*/
+
+/*Wrapping & White spacing*/
+/*#q{
+    background: red;
+    width: 200px;
+    white-space:nowrap;
+}
+
+#w {
+    background: blue;
+    width: 200px;
+    word-break:break-word;
+}
+
+.WS{
+    background: green;
+    width: 2000px;
+    white-space: pre-line;
+    white-space: pre;
+    white-space: pre-wrap;
+}
+*/
+
+/*Font Family*/
+/*p {
+    font-family: "Vibes", system-ui;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+
+/*font Size defualt (text, p => 16px = 1em =100%
+    h1 => 32px =2em = 200%
+*/
+/*#txt1{
+    font-size:16px;
+}
+#txt2{
+    font-size: 30px;
+}
+#txt3{
+    font-size: 40px;
+}
+span{
+    font-size: xx-large;
+}
+
+h1{
+    font-size: 2em;
+}*/
+
+/*Font weight*/
+/*p{
+    font-weight: bold;
+}
+h1>span{
+    font-weight:600;
+}*/
+
+/*Font shorthand (font-style, font variant, font-weight, font-size and font-family)*/
+/*p{
+    font: italic small-caps bold 40px fantasy;
+}
+*/
+
+/*BackGround*/
+/*.bg {
+    height: 600px;
+    border: 10px dotted red;
+    padding: 10px;
+    background-image: url(/Images/images.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-size: cover;
+    background: red url(/Images/images.jpeg) no-repeat center padding-box;
+}*/
+
+/*linear gradient*/
+/*.lg{
+  height:300px;
+  background: linear-gradient(30deg, red 30%, blue 30% 50%, green 50%);
+  background: linear-gradient(green, transparent);
+
+}*/
+
+/*Radial gradient*/
+/*.rg{
+    height: 600px;
+    width: 2340px;
+    background: radial-gradient(circle 200px at left top,blue, red);
+
+}*/
+
+/*float*/
+/*.parent {
+    background: red;
+}
+.child1{
+    background: blue;
+    width: 50px;
+    height: 50px;
+}
+.child2{
+    background: green;
+    width: 50px;
+    height: 50px;
+}
+.child3{
+    background: yellow;
+    width: 50px;
+    height: 50px;
+}
+.float{
+      float: left;
+}
+.clear {
+    clear: left;
+}*/
+
+/*Overflow*/
+/*.of{
+    height: 200px;
+    width: 200px;
+    background: red;
+    border: 5px dotted;
+    overflow: auto;
+}*/
+
+/*Position*/
+/*.parent{
+    background: skyblue;
+    height: 2000px;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+
+}
+.parent div{
+    height: 100px;
+}
+.child1{
+    background: red;
+    position: fixed;
+}
+.child2{
+    background: gold;
+    position:relative;
+    top: 50px;
+    right: 20px;
+
+
+}
+.child3{
+    background: green;
+    position: absolute;
+    bottom: 0px;
+}
+.child4{
+    background: blue;
+    position: sticky;
+    top: 0px;
+}*/
+
+/*Z-index*/
+/*.zi div{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+
+}
+.child1{
+    background: red;
+    top:40px;
+    left: 40px;
+    z-index: -1;
+}
+.child2{
+    background: blue;
+    top: 30px;
+    left: 30px;
+    z-index: 3;
+    
+}
+.child3{
+    background: green;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+
+}
+.child4{
+    background: yellow;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+}*/
+
+/*List style*/
+/*ul, ol {
+    list-style-type: square;
+    list-style-position: inside;
+    list-style-image: url(/Images/images.jpeg);
+}
+li {
+    background: brown;
+}*/
+
+/*Table style*/
+/*table{
+
+    width: 100%;
+    border-block-end: 1px solid black;
+
+}
+th {
+    background: gold;
+    height: 40px;
+    text-align: center;
+    border: 1px solid blue;
+
+}
+
+td {
+    background: #b2f057;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+
+}*/
+
+/*Pseudo classes*/
+/*.ps {
+    width: 200px;
+    height: 200px;
+    background: black;
+    background-size: contain;
+}
+.ps:hover {
+
+    background-image: url(/Images/images.jpeg);
+}
+.ps:active {
+    background-color: white;
+    background-image: url(/Images/hut-400.png);
+}
+.ps{
+    color:darkorange;
+    text-decoration:none;
+    font-size: 20px;
+}
+.ps:hover{
+    color:wheat;
+}
+.ps:visited{
+    color:darkblue;
+}
+.ps:active{
+    background-color:darkred;
+}
+.ps:focus{
+    color:darkgreen;
+}
+.ps:link{
+    color:darkblue;
+}
+.ps:target{
+    color:darkred;
+}
+    
+.a:focus{
+    background-color:fuchsia;
+}
+.b:enabled{
+    background-color:darkorange;
+}
+.c:disabled{
+    background-color:darkred;
+}
+.d:invalid{
+    background-color:darkred;
+}
+.d:valid{
+    background-color:greenyellow;
+}
+.e:checked{
+    color:peru;
+    position:absolute;
+    top: 50px;
+}
+.f:empty {
+    background-color: darkgreen;
+}
+.g:required {
+    background-color: darkblue;
+}
+    */
+
+/*Pseudo elements*/
+/*#pe::first-line {
+    color: cadetblue;
+    font-size: 30px;
+}
+#pe::first-letter {
+    color: blue;
+    font-size: 50px;
+}
+#pe::after {
+    content: '';
+    width: 10px;
+    height: 100px;
+    background: indianred;
+    position: absolute;
+    top: 100px;
+    right: 625px;
+}
+::selection {
+    color: white;
+    background: black;
+}
+p::before {
+    content: '';
+    background-color: indianred;
+    width: 10px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 17px;
+}*/
+
+/*Sibling Selectors*/
+/*1.Adjcent selectors*/
+/*.sibling h1 + p {
+    color: red;
+}*/
+/*2.General sibling selectors*/
+/*.sibling h2 ~ p {
+    color: greenyellow;
+}*/
+
+/*Attribute Selectors*/
+/*
+    1. [attribute]
+    2. [attribute = value]
+    3. element[attribute]
+    4. element[attribute = value]
+    5. [attribute ^= value] start with
+    6. [attribute $= value] end with
+    7. [attribute *= value] contains a specified value
+    8. [attribute ~= value] contains a specified word
+    9. [attribute = value i] case-insensitive
+
+
+*/
+/*[type] {
+    background: green;
+}
+[type = text] {
+    background: red;
+}
+.o a[href] {
+    background: wheat;
+
+}
+input[type = password] {
+    background: yellow;
+}
+[href^="www"] {
+    background: red;
+    font-size: 20px;
+    clear: both;
+}
+[href$=".de"] {
+    background-color:brown;
+    font-size: 20px;
+}
+[href*="twit"] {
+    background-color:goldenrod;
+    font-size: 20px;
+}
+[href~="instagram"] {
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+[class="TEST" i]{
+    background-color:aqua;
+    font-size: 20px;
+}*/
+
+/*Transform*/
+/*
+    traslate(x,y)
+    traslateX(x)
+    traslateY(y)
+    scale(x,y) zoom in and out
+    matrix(scaleX, skewY, skewX, scaleY, translateX, translateY)
+*/
+/*.tr{
+    width: 400px;
+    height: 400px;
+    background: red;
+    transform: translate(200px,40px)
+
+ #tr{
+     width: 400px;
+     height: 400px;
+    background: blue;
+    transform: translateX(500px);
+}
+ #tr1{
+    width: 400px;
+    height: 400px;
+    background: green;
+
+    transform: translateY(30px);
+}
+/tr {
+    width: 400px;
+    height: 400px;
+    background: red;
+    transform: scaleY(5);
+ 
+}
+.tr {
+    width: 400px;
+    height: 400px;
+    background: red;
+    transform:rotate(70deg)
+}
+.tr {
+    width: 400px;
+    height: 400px;
+    background: red;
+    transform: skew(20deg, 10deg)
+}*/
+/*Mtrix*/
+/*.tr {
+    width: 400px;
+    height: 400px;
+    background: red;
+    transform: matrix(1,0,0,1,100,10);
+}*/
+
+
+/*Transition*/
+/*.tn{
+  width: 180px;
+  height: 70px;
+  background: gold;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.tn:hover {
+  width: 300px;
+  height: 140px;
+  background: red;
+  color: greenyellow;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+ 
+}*/
+
+/*Animation*/
+/*.an {
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+       shorthand
+    animation: ani 5s ease-in-out 2s 1 normal both;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(0,0) rotate(0deg);
+        background: black;
+    }
+
+    25% {
+        transform:translate(0,700px) rotate(90deg);
+        background: blue;
+    }
+
+    50% {
+        transform: translate(1750px,700px) rotate(180deg);
+        background: green;
+    }
+
+    75% {
+        transform: translate(1750px,0) rotate(270deg);
+        background: yellow;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        background: pink;
+    }
+}
+
+.an:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}*/
+
+
+/*display block - inline - inline block*/
+/*
+    property  | default width       |  new line | width , height | margin, padding
+    --------------------------------------------------------------------------------
+    block     |100% of parents width|    yes    |   yes          |   yes  
+    inline    |   fit content       |    no     |   no           |   no
+*/
+/*
+span, p{
+    background: red;
+}*/
+
+
+/*Felx box*/
+/*
+    1. flex-direction
+    2. flex-wrap
+    3. flex-flow
+    4. justify-content
+    5. align-items
+    6. align-content
+    7. order
+    8. flex-grow
+    9. flex-shrink
+    10. flex-basis
+    11. flex
+    12. align-self
+*/
+/*if flex-direction == row
+    justify-content ==> x-axis
+    align-items ==> y-axis
+    align-content ==> y-axis
+
+    if flex-direction == column
+    justify-content ==> y-axis
+    align-items ==> x-axis
+    align-content ==> x-axis
+
+*/
+/*.parent {
+
+    background: red;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+}
+.parent div{
+    padding: 10px;
+    margin: 20px;
+}
+.child1{
+    background: blue;
+    align-self: flex-start;
+    order: 4;
+}
+.child2 {
+    background: green;
+    align-self: center;
+    order: 3;
+}
+
+.child3{
+    background: yellow;
+    align-self: flex-end;
+    order: 2;
+}
+.child4{
+    background: pink;
+    align-self: stretch;
+    order: 1;
+}*/
+
+
+/*Grid*/
+/*
+    1. grid-template-columns
+    2. grid-template-rows
+    3. grid-template-areas
+    4. grid-template
+    5. grid-column-gap
+    6. grid-row-gap
+    7. grid-gap
+    8. grid-column
+    9. grid-row
+    10. grid-area
+    11. justify-items
+    12. align-items
+    13. place-items
+    14. justify-content  // does not work with 1fr, works in the X-axis
+    15. align-content   //  works in the Y-axis
+    16. place-content
+    17. grid-auto-columns
+    18. grid-auto-rows
+    19. grid-auto-flow
+    20. grid
+    21. justify-self
+    22. align-self
+    23. place-self
+*/
+/*
+    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 100px 1fr 2fr;
+    grid-template-columns: minmax(100px, 200px) 350px;
+    grid-template-rows: minmax(100px, auto) repeat(2,auto);
+*/
+/*.parent .item1{
+   background: blue;
+   grid-column: 1/ 4;
+}
+.parent .item2 {
+   background: green;
+   grid-row: 2/4;
+
+}
+.parent .item3{
+    background: yellow;
+
+    grid-row: 2/4;
+}
+.parent .item4{
+    background: pink;
+    grid-row: 2/4;
+}
+.parent .item5{
+    background: orange;
+    grid-column: 1/4;
+}*/
+/*
+.header, .footer{
+    grid-column: 1/-1;
+}
+
+.nav, .main, .sidebar{
+    grid-row: 2/4;
+}*/
+/*.parent{
+    background: red;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "nav main sidebar"
+        "nav main sidebar"
+        "footer footer footer";
+}
+.parent div {
+    background: gold;
+}
+.header {
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+}*/
+
+/*Media Queries*/
+/*@media (max-width: 600px) {
+    body {
+        background: blue;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        background: green;
+    }
+}
+@media (min-width: 901px) {
+    body {
+        background: red;
+    }
+}
+@media print {
+    body {
+        background: yellow;
+    }
+}*/
+/*.parent{
+    display:flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+.child{
+    background: red;
+    width: 150px;
+    height: 200px;
+}
+@media (max-width:600px){
+    .parent{
+        flex-direction: column;
+    }
+    .child{
+        width: 100%;
+    }
+}
+@media (min-width:601px) and (max-width:900px){
+    .parent{
+        flex-wrap:wrap;
+    }
+    .child{
+        width: 49%;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

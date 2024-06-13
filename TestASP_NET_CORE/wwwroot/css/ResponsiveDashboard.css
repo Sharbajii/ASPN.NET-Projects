@@ -1,0 +1,177 @@
+﻿/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #001;
+    display: flex;
+}
+
+/* Profile Styling */
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+    .img-box img {
+        width: 100%;
+    }
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+    .profile h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+
+/* Menu Styling */
+.menu {
+    background-color: #333;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+    .menu:hover {
+        width: 260px;
+    }
+
+/* Navigation List Styling */
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: background-color 0.5s;
+}
+
+ul li a:hover, .active, .data-info .box:hover, td:hover {
+    background-color: #555;
+}
+
+/* Logout Button Styling */
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #f00;
+    border-radius: 10px;
+}
+
+/* Icon Styling */
+ul li a i {
+    font-size: 30px;
+}
+
+/* Container Styling */
+.con {
+    width: 100%;
+}
+
+/* Title Information Styling */
+.title-info {
+    background-color: #129;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 9px;
+    margin: 10px 0;
+}
+
+/* Data Information Styling */
+.data-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.data-info .box {
+    background-color: #115;
+    height: 150px;
+    flex-basis: 150px;
+    padding: 10px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.data-info .box i {
+  font-size: 40px;
+}
+
+.data-info .box .data {
+  text-align: center;
+}
+
+.data-info .box .data span {
+    font-size: 30px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td, th {
+    background-color: #123;
+    height: 60px;
+    border-radius: 100px;
+}
+
+th {
+    background-color: #0080ff;
+}
+
+/* Miscellaneous Classes */
+.price, .count, .categ {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.price {
+    background-color: green;
+}
+
+.count {
+    background-color: gold;
+    color: black;
+}
+
+.categ {
+    background-color: #f00;
+}
