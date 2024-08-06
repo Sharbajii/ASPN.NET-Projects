@@ -1,0 +1,96 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(30,0,78);
+    font-family: "Roboto", sans-serif;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-table {
+    background: rgb(239, 239, 239);
+    width: 60%;
+    margin-top: 130px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: rgb(92, 52, 155);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+    .header h1 {
+        display: inline;
+    }
+
+    .header button {
+        float: left;
+        background: white;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+#tasks {
+    padding: 20px;
+}
+
+.task {
+    display: flex;
+    background-color: white;
+    padding: 4px;
+    border-bottom: solid black 1px;
+    transition: box-shadow 0.4s;
+}
+
+.done {
+    background-color: rgb(158, 253, 160);
+}
+
+.task:hover {
+    box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+.task-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.38);
+}
+
+    button.circular {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 0;
+    }
+
+.circular#b1 {
+    background-color: rgb(114, 0, 0);
+    color: white;
+}
+
+.circular#b2 {
+    background-color: rgb(0, 150, 30);
+    color: white;
+}
+
+.circular#b3 {
+    background-color: rgb(0, 16, 0.692);
+    color: white;
+}

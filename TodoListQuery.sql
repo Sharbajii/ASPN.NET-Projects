@@ -1,0 +1,6 @@
+﻿CREATE TABLE Tasks (
+    TaskId INT PRIMARY KEY IDENTITY,
+    Title NVARCHAR(255) NOT NULL,
+    Date DATETIME NOT NULL,
+    IsDone BIT NOT NULL
+);

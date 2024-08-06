@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TestASP_NET_CORE.Helper;
 
 namespace TestASP_NET_CORE.Controllers
 {
@@ -39,6 +40,14 @@ namespace TestASP_NET_CORE.Controllers
         public IActionResult PersonalPortfolio()
         {
             ViewData["Title"] = "Personal Portfolio";
+            return View();
+        }
+        public IActionResult TodoList()
+        {
+            var dbElementsManipulation = new DBElementsManipulation("DefaultConnectionString");
+
+            dbElementsManipulation.GetTasks();
+            ViewData["Title"] = "Todo List";
             return View();
         }
     }

@@ -1,4 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using TestASP_NET_CORE.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddDbContext<TodoContext>(options =>
+{
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseSqlServer(connectionString);
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,7 +32,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=FrontEndProjects}/{action=ResponsiveGlassSite}/{id?}");
+    pattern: "{controller=FrontEndProjects}/{action=TodoList}/{id?}");
 
 app.Run();
 
